@@ -1,0 +1,42 @@
+
+.spec_line{
+    margin-top: 10px;
+    height: 50px;
+}
+.bs-callout {
+    padding: 10px;
+    border-left: 3px solid #eee;
+    line-height: 20px;
+}
+
+.bs-line {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.bs-callout h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 14px
+}
+
+.bs-callout p:last-child {
+    margin-bottom: 0
+}
+
+.bs-bs-callout-mb {
+    margin-bottom: 10px
+}
+
+.bs-callout-info {
+    background: #e8eff4;
+    border-color: #558bbc
+}
+
+.bs-callout-info h4 {
+    color: #075ba7
+}
+
+.bs-callout-info .bs-callout-content {
+    color: #24579f
+}

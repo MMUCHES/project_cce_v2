@@ -1,0 +1,229 @@
+
+.navbar {
+    background-color: #563d7c;
+    border-color: #463265;
+}
+
+.navbar .navbar-brand {
+    color: #ffffff;
+    font-size: 22px;
+    font-size: 22px;
+    text-shadow: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: auto
+}
+
+.navbar .navbar-brand:hover,
+.navbar .navbar-brand:focus {
+    color: #ffffff;
+}
+
+.navbar .navbar-text {
+    color: #ffffff;
+}
+
+.navbar .navbar-nav > li > a {
+    color: #cdbfe3;
+    margin-top: 5px;
+}
+
+.navbar .navbar-nav > li > a:hover,
+.navbar .navbar-nav > li > a:focus {
+    color: #ffffff; /*เม้าชี้แล้วเปลี่ยนสี*/
+}
+
+.navbar .navbar-nav > li > .dropdown-menu {
+    background-color: #563d7c;
+}
+.navbar .navbar-nav > li > .dropdown-menu > li > a {
+    color: #cdbfe3;
+}
+.navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.navbar .navbar-nav > li > .dropdown-menu > li > a:hover,
+.navbar .navbar-nav > li > .dropdown-menu > li > a:focus {
+    color: #ffffff; /*drop downเม้าชี้แล้วเปลี่ยนสี*/
+    background-color: #563d7c;
+}
+
+.navbar .navbar-nav > li > .dropdown-menu > li > .divider {
+    background-color: #563d7c;
+}
+
+.navbar .navbar-nav .open .dropdown-menu > .active > a,
+.navbar .navbar-nav .open .dropdown-menu > .active > a:hover,
+.navbar .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #ecdbff;
+    background-color: #563d7c;
+}
+
+.navbar .navbar-nav > .active > a,
+.navbar .navbar-nav > .active > a:hover,
+.navbar .navbar-nav > .active > a:focus {
+    color: #ecdbff;
+    background-color: #563d7c;
+}
+
+.navbar .navbar-nav > .open > a,
+.navbar .navbar-nav > .open > a:hover,
+.navbar .navbar-nav > .open > a:focus {
+    color: #ecdbff;
+    background-color: #563d7c;
+}
+
+.navbar .navbar-toggle {
+    border-color: #563d7c;
+}
+
+.navbar .navbar-toggle:hover,
+.navbar .navbar-toggle:focus {
+    background-color: #563d7c;
+}
+
+.navbar .navbar-toggle .icon-bar {
+    background-color: #ecf0f1;
+}
+
+.navbar .navbar-collapse,
+.navbar .navbar-form {
+    border-color: #ecf0f1;
+}
+
+.navbar .navbar-link {
+    color: #ecf0f1;
+}
+
+.navbar .navbar-link:hover {
+    color: #ecdbff;
+}
+
+@media (max-width: 767px) {
+    .navbar .navbar-nav .open .dropdown-menu > li > a {
+        color: #ecf0f1;
+    }
+
+    .navbar .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #ecdbff;
+    }
+
+    .navbar .navbar-nav .open .dropdown-menu > .active > a,
+    .navbar .navbar-nav .open .dropdown-menu > .active > a:hover,
+    .navbar .navbar-nav .open .dropdown-menu > .active > a:focus {
+        color: #ecdbff;
+        background-color: #463265;
+    }
+}
+
+.bs-callout {
+    padding: 10px;
+    border-left: 3px solid #eee;
+    line-height: 20px;
+}
+
+.bs-line {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.bs-callout h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 14px
+}
+
+.bs-callout p:last-child {
+    margin-bottom: 0
+}
+
+.bs-bs-callout-mb {
+    margin-bottom: 10px
+}
+
+.bs-callout-info {
+    background: #e8eff4;
+    border-color: #558bbc
+}
+
+.bs-callout-info h4 {
+    color: #075ba7
+}
+
+.bs-callout-info .bs-callout-content {
+    color: #24579f
+}
+
+.form-box {
+    margin: 0;
+    padding: 25px;
+    background: #f1f1f1;
+    border: 1px solid #e5e5e5;
+    color: #222;
+}
+
+.hr {
+    display: block;
+    height: 0;
+    overflow: hidden;
+    font-size: 0;
+    border-width: 1px 0 0 0;
+    border-top: 1px solid #E3E3E3;
+    margin: 12px 0;
+    border-top-color: rgba(0, 0, 0, .11)
+}
+.hr-double {
+    height: 3px;
+    border-top: 1px solid #E3E3E3;
+    border-bottom: 1px solid #E3E3E3;
+    border-top-color: rgba(0, 0, 0, .11);
+    border-bottom-color: rgba(0, 0, 0, .11)
+}
+.hr.dotted, .hr-dotted {
+    border-style: dotted
+}
+.hr-18, .hr18 {
+    margin: 18px 0
+}
+.panel-silver{
+    border-color: #337ab7;
+    background-color: #337ab7;
+}
+.panel-body-silver {
+    color: #ffffff;
+}
+
+.panel-green{
+    border-color: #5cb85c;
+    background-color: #5cb85c;
+}
+.panel-body-green {
+    color: #ffffff;
+}
+
+.panel-orange{
+    border-color: #f0ad4e;
+    background-color: #f0ad4e;
+}
+.panel-body-info{
+    color: #ffffff;
+}
+
+.panel-footer{
+    background-color: #ffffff;
+    color: #337ab7;
+}
+
+.panel-body-table {
+
+    background: #fafafa;
+    border-color: #337ab7;
+}
+.bs-old-docs {
+    height: 50px;
+}
+
+
