@@ -14,6 +14,9 @@ use Illuminate\Database\Eloquent\Model;
 class Question extends Model
 {
     public $fillable = [
+        'usersid',
+        'name',
+        'branch',
         'radio_1_1',
         'radio_1_2',
         'radio_1_3',

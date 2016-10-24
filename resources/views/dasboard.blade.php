@@ -59,7 +59,7 @@
                         <a href="/dasboard"><i class="fa fa-home fa-fw"></i> หน้าหลัก</a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-pie-chart fa-fw"></i> ข้อมูลสรุป</a>
+                        <a href="/report_02"><i class="fa fa-pie-chart fa-fw"></i> ข้อมูลสรุป</a>
                     </li>
                     <li>
                         <a href="#"><i class="fa fa-area-chart fa-fw"></i> แยกรายการ</a>

@@ -11,6 +11,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Question;
+use Illuminate\Support\Facades\DB;
 
 class QuestionCRUDController extends Controller
 {
@@ -119,10 +120,10 @@ class QuestionCRUDController extends Controller
      * Display the specified resource.
      */
 
-    public function show($id)
+    public function show()
     {
-        $question = Product::find($id);
-        return view('dasboard.show', compact('question'));
+        $questions = DB::table('questions')->get();
+        return view('dasboard.dasboard', ['questions' => $questions]);
     }
 
     /**

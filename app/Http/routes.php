@@ -19,10 +19,8 @@ Route::group(['middleware' => 'web'], function () {
 
     Route::resource('questionCRUD','QuestionCRUDController');
 
-
-    Route::get('/dasboard', function () {
-    return view('dasboard.dasboard');
-    });
+    Route::get('/dasboard', 'QuestionCRUDController@show');
+    Route::get('/report_02', 'QuestionCRUDController@show');
 
     Route::get('/question_01', function () {
     return view('main.questionnaire.question_01');
