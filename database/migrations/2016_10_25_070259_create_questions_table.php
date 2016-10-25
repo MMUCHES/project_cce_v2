@@ -10,9 +10,7 @@ class CreateQuestionsTable extends Migration
         Schema::create('questions', function (Blueprint $table) {
 
             $table->increments('id');
-            $table->text('usersid');
-            $table->text('name');
-            $table->text('branch');
+            $table->text('student_id');;
             $table->integer('radio_1_1');
             $table->integer('radio_1_2');
             $table->integer('radio_1_3');
@@ -78,10 +76,10 @@ class CreateQuestionsTable extends Migration
             $table->integer('radio_2_38');
             $table->integer('radio_2_39');
             $table->integer('radio_2_40');
-            $table->text('comment_1');
-            $table->text('comment_2');
-            $table->text('comment_3');
-            $table->text('comment_4');
+            $table->string('comment_1');
+            $table->string('comment_2');
+            $table->string('comment_3');
+            $table->string('comment_4');
             $table->timestamps();
         });
     }

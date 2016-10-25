@@ -40,6 +40,7 @@ class QuestionCRUDController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
+            'student_id' => 'required',
             'radio_1_1' => 'required',
             'radio_1_2' => 'required',
             'radio_1_3' => 'required',

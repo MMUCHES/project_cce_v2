@@ -1,15 +1,6 @@
 <!-- questionnaire1 -->
 
-<div class="form-inline">
-    <label>กรอกรหัสนิสิต:</label>
-    <input type="text" name="usersid" class="form-control">
 
-    <label>กรอกชื่อ สกุล:</label>
-    <input type="text" name="name" class="form-control">
-
-    <label>กรอกสาขา:</label>
-    <input type="text" name="branch" class="form-control">
-</div>
 
 <p>
 <div class="bs-callout bs-line bs-callout-info">คำชี้แจง! แบบสอบถามนี้มี 3 ตอน ตอนที่ 1
@@ -17,6 +8,11 @@
     จะเป็นการแสดงความคิดเห็นอื่นๆจำนวนทั้งสิ้น 3
     หน้าผลการสอบของท่านจะนำมาประมวลผลเป็นภาพรวมมิได้นำเสนอและเป็นรายบุคคลจึงขอให้ท่านออกความคิดเห็น ความเชื่อ
     และความรู้สึกที่เป็นจริงของท่านผู้เขียนขึ้น
+</div>
+
+<div class="form-inline" style="margin-bottom: 15px;">
+    <label>กรอกรหัสนิสิต : </label>
+    <input type="text" name="student_id" class="form-control">
 </div>
 
 <div class="table-responsive">
@@ -805,3 +801,5 @@
     <button type="submit" class="btn btn-primary">บันทึก</button>
 </div>
 <div class="bs-old-docs"></div>
+
+
