@@ -15,27 +15,16 @@ use Illuminate\Support\Facades\DB;
 
 class QuestionCRUDController extends Controller
 {
-    /**
-     * Display
-     */
 
     public function index(Request $request)
     {
         return view('main.main', compact('questions'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
-
     public function create()
     {
         return view('dasboard.create_tours');
     }
-
-    /**
-     * Store a newly created resource in storage.
-     */
 
     public function store(Request $request)
     {
@@ -113,53 +102,41 @@ class QuestionCRUDController extends Controller
 
         ]);
         Question::create($request->all());
-        return redirect()->route('questionCRUD.index')
-            ->with('success', 'Question created successfully');
+        return view('main.questionnaire.success');
+
+//        return redirect()->route('questionCRUD.index')
+//            ->with('success', 'Question created successfully');
+
     }
 
-    /**
-     * Display the specified resource.
-     */
-
-    public function show()
+    public function show(Request $request)
     {
         $questions = DB::table('questions')->get();
-        return view('dasboard.dasboard', ['questions' => $questions]);
+        return view('dasboard.dasboard', compact('questions'));
+
+      //  $questions= Question::orderBy('id','DESC')->paginate(5);
+      //  return view('dasboard.dasboard', compact('questions')) ->with('i', ($request->input('page', 1) - 1) * 5);
     }
 
-    /**
-     * Show
-     */
 
     public function edit($id)
     {
-        $question = Question::find($id);
-        return view('dasboard.update_tours', compact('question'));
+        //
     }
-
-    /**
-     * Update
-     */
 
     public function update(Request $request, $id)
     {
-        $this->validate($request, [
-            'radio_1_1' => 'required',
-            'radio_1_2' => 'required',
-        ]);
-        Question::find($id)->update($request->all());
-        return redirect()->route('questionCRUD.index')
-            ->with('success', 'Product updated successfully');
+        //
     }
 
-    /**
-     * Remove
-     */
 
     public function destroy($id)
     {
-        Question::find($id)->delete();
-        return redirect()->route('productCRUD.index')
-            ->with('success', 'Product deleted successfully');
+        //
     }
+
+
 }
+
+
+

@@ -35,12 +35,13 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html">ระบบจัดการผู้ดูแลระบบ</a>
+            <a class="navbar-brand" href="/dasboard">ระบบจัดสรุปผลการประเมิน</a>
         </div>
         <ul class="nav navbar-top-links navbar-right">
+            <li><a href="/"><i class="fa fa-home"></i> กลับหน้าหลัก</a></li>
             <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                    <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    <i class="fa fa-user fa-fw"></i>จัดการ <i class="fa fa-caret-down"></i>
                 </a>
                 <ul class="dropdown-menu dropdown-user">
                     <li><a href="#"><i class="fa fa-gear fa-fw"></i> ตั้งค่า</a>
@@ -56,15 +57,14 @@
             <div class="sidebar-nav navbar-collapse">
                 <ul class="nav" id="side-menu">
                     <li>
-                        <a href="/dasboard"><i class="fa fa-home fa-fw"></i> หน้าหลัก</a>
+                        <a href="/dasboard"><i class="fa fa-pie-chart fa-fw"></i> ข้อมูลสรุป</a>
                     </li>
+                    {{--<li>--}}
+                        {{--<a href="/report_02"><i class="fa fa-area-chart fa-fw"></i> แยกรายการ</a>--}}
+                    {{--</li>--}}
                     <li>
-                        <a href="/report_02"><i class="fa fa-pie-chart fa-fw"></i> ข้อมูลสรุป</a>
+                        <a onclick="myFunction()"><i class="fa fa-print fa-fw"></i> พิมพ์สรุป</a>
                     </li>
-                    <li>
-                        <a href="#"><i class="fa fa-area-chart fa-fw"></i> แยกรายการ</a>
-                    </li>
-    
                 </ul>
             </div>
             <!-- /.sidebar-collapse -->
