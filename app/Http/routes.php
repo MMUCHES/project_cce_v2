@@ -6,7 +6,6 @@ Route::get('/', function () {
 });
 
 
-
 Route::group(['middleware' => 'web'], function () {
 
     Route::auth();
@@ -19,12 +18,14 @@ Route::group(['middleware' => 'web'], function () {
     });
 
     //Create questions
-    Route::resource('questionCRUD','QuestionCRUDController');
+    Route::resource('questionCRUD', 'QuestionCRUDController');
+
+    Route::get('questionaire','QuestionCRUDController@index');
 
     //Create Show report
     Route::get('/dasboard', 'QuestionCRUDController@show');
 
-    Route::get('/report_02', 'QuestionCRUDController@show');
+    Route::get('/report_02', 'QuestionCRUDController@report');
 
     
 });

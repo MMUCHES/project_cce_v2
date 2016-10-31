@@ -8,8 +8,8 @@
             <thead>
             <tr>
                 <th style="width: 10%;text-align: center">รหัสนิสิต</th>
-                <th style="width: 15%;text-align: center">ผลการประเมิน ตอนที่ 1</th>
-                <th style="width: 15%;text-align: center">ผลการประเมิน ตอนที่ 2</th>
+                <th style="width: 15%;text-align: center">ระดับความคิดเห็นแบบประเมิน ตอนที่ 1</th>
+                <th style="width: 15%;text-align: center">ระดับความคิดเห็นแบบประเมิน ตอนที่ 2</th>
                 <th style="width: 15%;text-align: center">จุดเด่น</th>
                 <th style="width: 15%;text-align: center">จุดที่ควรพัฒนา</th>
                 <th style="width: 15%;text-align: center">ปัญหาและอุปสรรค</th>
@@ -20,8 +20,8 @@
             @foreach ($questions as $question)
                 <tr>
                     <td style="width: 5%;text-align: center">{{ $question->student_id }}</td>
-                    <td>เห็นด้วยมากที่สุด</td>
-                    <td>เห็นด้วยมาก</td>
+                    <td>ปานกลาง</td>
+                    <td>ปานกลาง</td>
                     <td>{{ $question->comment_1 }}</td>
                     <td>{{ $question->comment_2 }}</td>
                     <td>{{ $question->comment_3 }}</td>

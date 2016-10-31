@@ -59,11 +59,8 @@
                     <li>
                         <a href="/dasboard"><i class="fa fa-pie-chart fa-fw"></i> ข้อมูลสรุป</a>
                     </li>
-                    {{--<li>--}}
-                        {{--<a href="/report_02"><i class="fa fa-area-chart fa-fw"></i> แยกรายการ</a>--}}
-                    {{--</li>--}}
                     <li>
-                        <a onclick="myFunction()"><i class="fa fa-print fa-fw"></i> พิมพ์สรุป</a>
+                        <a href="/report_02"><i class="fa fa-area-chart fa-fw"></i> แยกรายการ</a>
                     </li>
                 </ul>
             </div>

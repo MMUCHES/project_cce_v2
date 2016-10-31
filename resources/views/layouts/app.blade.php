@@ -52,7 +52,7 @@
                 @if (Auth::guest())
                 @else
                     <li><a href="{{ url('/') }}">หน้าหลัก</a></li>
-                    @role('owner')
+                    @role('admin')
                     <li><a href="/dasboard">สรุปผลแบบสอบถาม</a></li>
                     @endrole
                     <li class="dropdown">
