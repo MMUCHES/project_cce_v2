@@ -4,9 +4,9 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <div class="centering text-center error-container">
+                <div class="centering text-center error-container" style="margin-top: 200px;">
                     <div class="text-center">
-                        <h2 class="without-margin"><span class="text-danger"><big>เราได้บันทึกคำตอบของคุณไว้แล้ว</big></span></h2>
+                        <h2 class="without-margin"><span class="text-danger"><big>ระบบได้บันทึกคำตอบของคุณไว้แล้ว</big></span></h2>
                         <h4 class="text-danger">แบบสอบถามนักเรียน-นักศึกษา-ครูอาจารย์โครงการฝึกประสบการณ์วิชาชีพครู</h4>
                     </div>
                     <div class="text-center">

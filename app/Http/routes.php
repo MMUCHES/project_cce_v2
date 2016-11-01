@@ -17,15 +17,18 @@ Route::group(['middleware' => 'web'], function () {
         Route::resource('/post', 'PostController');
     });
 
+    Route::get('/questionHOME', function () {
+        return view('main.questionnaire.home');
+    });
     //Create questions
-    Route::resource('questionCRUD', 'QuestionCRUDController');
+    Route::resource('questionCRUD', 'QuestionController');
 
-    Route::get('questionaire','QuestionCRUDController@index');
+    Route::get('questionaire','QuestionController@index');
 
     //Create Show report
-    Route::get('/dasboard', 'QuestionCRUDController@show');
+    Route::get('/dasboard', 'QuestionController@show');
 
-    Route::get('/report_02', 'QuestionCRUDController@report');
+    Route::get('/report_02', 'QuestionController@report');
 
     
 });

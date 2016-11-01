@@ -14,7 +14,7 @@ use App\Http\Controllers\Controller;
 use App\Question;
 use Illuminate\Support\Facades\DB;
 
-class QuestionCRUDController extends Controller
+class QuestionController extends Controller
 {
 
     public function index(Request $request)
@@ -38,7 +38,8 @@ class QuestionCRUDController extends Controller
         $answer->save();
         $answer->questions()->sync($questions);
 
-        dd($answer);
+        return view('main.questionnaire.success');
+//        dd($answer);
     }
 
     public function show(Request $request)

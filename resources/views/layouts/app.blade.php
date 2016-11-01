@@ -53,13 +53,13 @@
                 @else
                     <li><a href="{{ url('/') }}">หน้าหลัก</a></li>
                     @role('admin')
-                    <li><a href="/dasboard">สรุปผลแบบสอบถาม</a></li>
+                    <li><a href="/report_02">สรุปผลแบบสอบถาม</a></li>
                     @endrole
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                            aria-expanded="false">แบบสอบถาม<span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="/questionCRUD">แบบสอบถามนักเรียน-นักศึกษา-ครูอาจารย์โครงการฝึกประสบการณ์วิชาชีพครู</a></li>
+                            <li><a href="/questionHOME">แบบสอบถามนักเรียน-นักศึกษา-ครูอาจารย์โครงการฝึกประสบการณ์วิชาชีพครู</a></li>
                         </ul>
                     </li>
                 @endif
