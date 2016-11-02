@@ -44,8 +44,7 @@ class QuestionController extends Controller
 
     public function show(Request $request)
     {
-        $questions = DB::table('questions')->get();
-        return view('dasboard.dasboard', compact('questions'));
+        return view('dasboard.dasboard');
 
         //  $questions= Question::orderBy('id','DESC')->paginate(5);
         //  return view('dasboard.dasboard', compact('questions')) ->with('i', ($request->input('page', 1) - 1) * 5);
@@ -68,21 +67,41 @@ class QuestionController extends Controller
         //
     }
 
+    public function dasboard(Request $request)
+    {
+
+        $total = DB::table('answers');
+        $total->join('answer_question', 'answers.id', '=', 'answer_question.answer_id');
+        $total->join('questions', 'answer_question.question_id', '=', 'questions.id');
+        $total->addSelect('answers.id');
+        $total->addSelect(DB::raw('count(case when questions.parent_id = 1 then answer_question.value end) count'));
+        $total->addSelect(DB::raw('avg(case when questions.parent_id = 1 then answer_question.value end) part1'));
+        $total->addSelect(DB::raw('avg(case when questions.parent_id = 2 then answer_question.value end) part2'));
+        $avgTotals = $total->get();
+
+
+        return view('dasboard.dasboard')
+            ->with('avgTotals', $avgTotals);
+
+    }
+
     public function report(Request $request)
     {
         $query = DB::table('answers');
-
-        $query->join('answer_question','answers.id','=','answer_question.answer_id');
-        $query->join('questions','answer_question.question_id','=','questions.id');
-
+        $query->join('answer_question', 'answers.id', '=', 'answer_question.answer_id');
+        $query->join('questions', 'answer_question.question_id', '=', 'questions.id');
         $query->addSelect('answers.id');
         $query->addSelect(DB::raw('avg(case when questions.parent_id = 1 then answer_question.value end) part1'));
         $query->addSelect(DB::raw('avg(case when questions.parent_id = 2 then answer_question.value end) part2'));
-
         $query->groupBy('answers.id');
-        //$query->groupBy('questions.parent_id');
+        $avgQuestions = $query->get();
 
-        dd($query->get());
+        $questions = Question::with(['children'])->whereNull('parent_id')->get();
+
+        return view('dasboard.report_02')
+            ->with('avgQuestions', $avgQuestions)
+            ->with('questions', $questions);
+
     }
 
 

@@ -2,7 +2,7 @@
 
 <p>
 <div class="table-responsive">
-  
+
     <?php $section = 0;?>
     @foreach($questions as $q)
 
@@ -36,9 +36,9 @@
                         <td style="text-align: left">{{$sub->text}}</td>
                         <td><input type="radio" name="question[{{$sub->id}}][value]" value="1"></td>
                         <td><input type="radio" name="question[{{$sub->id}}][value]" value="2"></td>
-                        <td><input type="radio" name="question[{{$sub->id}}][value]" value="3"></td>
+                        <td><input type="radio" name="question[{{$sub->id}}][value]" value="3" checked></td>
                         <td><input type="radio" name="question[{{$sub->id}}][value]" value="4"></td>
-                        <td><input type="radio" name="question[{{$sub->id}}][value]" value="5" checked></td>
+                        <td><input type="radio" name="question[{{$sub->id}}][value]" value="5"></td>
                     </tr>
                 @endforeach
                 </tbody>

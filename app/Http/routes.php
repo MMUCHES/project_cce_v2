@@ -23,12 +23,12 @@ Route::group(['middleware' => 'web'], function () {
     //Create questions
     Route::resource('questionCRUD', 'QuestionController');
 
-    Route::get('questionaire','QuestionController@index');
+    Route::get('questionaire', 'QuestionController@index');
 
     //Create Show report
-    Route::get('/dasboard', 'QuestionController@show');
+    Route::get('/dasboard', 'QuestionController@dasboard');
 
     Route::get('/report_02', 'QuestionController@report');
 
-    
+
 });
